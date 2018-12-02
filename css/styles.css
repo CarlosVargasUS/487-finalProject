@@ -1,0 +1,122 @@
+body{
+	margin: 0;
+	padding: 0;
+}  
+
+#site{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.flex-center{
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+/* first page */
+
+.box1{
+	display:flex;
+	align-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/caravan-1.gif);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+/* hero-home
+=================== */
+
+@media (min-width: 60rem) {
+	.home-hero {
+		height: 100vh;
+		padding-top: 35vh;
+	}
+}
+
+/* buttons */
+
+.button {
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+.button-accent {
+	color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+
+
+
+
+
+
+
+
+
+
+.box2{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/land-scape-caravan1.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+.box3{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/land-scape-caravan2.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+.box4{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/land-scape-caravan3.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+.box5{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/land-scape-caravan4.jpg);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
+.box6{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/caravan-4.gif);
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+}
