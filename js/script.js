@@ -1,3 +1,38 @@
+// YOUTUBE API
+
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'ygVX1z6tDGI',
+    events: {
+      'onReady': onPlayerReady,
+    }
+  });
+
+  player.loadVideoById({'videoId': 'bHQqvYy5KYo',
+               'startSeconds': 890,
+               'endSeconds': 999,
+               'suggestedQuality': 'large'});
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  player.setPlaybackRate(1);
+  event.target.playVideo();
+}
+
+console.log('I have made it here 4');
+
 $(function () {
   console.log("ready!");
 
@@ -71,38 +106,6 @@ $(function () {
   // });
 
 
-  // YOUTUBE API
 
-  var tag = document.createElement('script');
-
-  console.log('I have made it here');
-
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  console.log('I have made it here 2');
-  // 3. This function creates an <iframe> (and YouTube player)
-  //    after the API code downloads.
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'M7lc1UVf-VE',
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  // 4. The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-    console.log('I have made it here 3');    
-    player.setPlaybackRate(2);
-    event.target.playVideo();
-  }
-
-  console.log('I have made it here 4'); 
 
 });
