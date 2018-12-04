@@ -26,9 +26,8 @@ body{
 
 #map{
 	position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+	width: 43.75em;
+	height: 31.25em;
 }
 
 /* news api */

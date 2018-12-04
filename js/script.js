@@ -47,11 +47,11 @@ function stopVideo() {
 
 
 
-console.log('I have made it here 4');
+//console.log('I have made it here 4');
 
 // START OF THE document READY FUNCTION
 
-map_box = config.map_box
+map_box = config.map_box //key
 mapboxgl.accessToken = map_box;
 var map = new mapboxgl.Map({
   container: 'map',
@@ -82,15 +82,15 @@ map.on('load', function () {
       "type": "line",
       "source": "trace",
       "paint": {
-        "line-color": "yellow",
+        "line-color": "red",
         "line-opacity": 0.75,
-        "line-width": 5
+        "line-width": 6
       }
     });
 
     // setup the viewport
-    map.jumpTo({ 'center': coordinates[0], 'zoom': 14 });
-    map.setPitch(30);
+    map.jumpTo({ 'center': coordinates[0], 'zoom': 4 });
+    map.setPitch(1);
 
     // on a regular basis, add more coordinates from the saved list and update the map
     var i = 0;
@@ -113,7 +113,7 @@ $(function () {
 
 
   var myKey = config.news_key;
-  console.log(config.news_key);
+  //console.log(config.news_key);
   var url = 'https://newsapi.org/v2/everything?q=caravan+immigration&from=2018-11-14&sortBy=publishedAt&apiKey=' + myKey;
   var url2 = 'https://newsapi.org/v2/everything?q=trump+immigration&from=2018-11-14&sortBy=publishedAt&apiKey=' + myKey;
   var urlArray = [url, url2];
@@ -131,11 +131,11 @@ $(function () {
       async: true,
       data: data,
       success: function (data) {
-        console.log(data.articles);
+       // console.log(data.articles);
         articles = data.articles;
 
         articles.forEach(function (article) {
-          console.log(article.title);
+          //console.log(article.title);
           html += '<div class="latest-news flex">';
           html += '<img class="thumbnail" src="' + article.urlToImage + '">';
           html += '<div class="text">';
