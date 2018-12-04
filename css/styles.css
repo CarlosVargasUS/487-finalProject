@@ -22,13 +22,7 @@ body{
 }
 
 
-/* MAPBOX API */
 
-#map{
-	position: absolute;
-	width: 43.75em;
-	height: 31.25em;
-}
 
 /* news api */
 
@@ -65,12 +59,8 @@ body{
 /* first page */
 
 .box1{
-	display:flex;
-	align-content: center;
-	align-items: center;
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/caravan-1.gif);
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
@@ -91,12 +81,67 @@ body{
 /* hero-home
 =================== */
 
+.home-hero {
+	background-image: url(../img/caravan-3.gif);
+	background-size: cover;
+	background-position: center;
+	padding: 10em 0;
+	color: #FFF;
+}
+
 @media (min-width: 60rem) {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
 	}
 }
+
+.parallax--bg,
+.parallax--box {
+	transition: initial;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+.title-cta {
+	margin: 0 0 .5em;
+}
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
 
 /* buttons */
 
@@ -110,33 +155,82 @@ body{
 	padding: .5em 1.75em;
 }
 
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
+}
+
 .button-accent {
 	color: #00ff6c;
 	border-color: #00ff6c;
 }
 
+.button-accent:hover,
+.button-accent:focus {
+	background: #00ff6c;
+	color: #232323;
+}
 
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
 
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #00ff6c;
+}
 
-
-
-
-
-
-
+/* BOX2 ------------------*/
 
 .box2{
+	display:flex;
+	flex-direction: row;
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/land-scape-caravan1.jpg);
+	/* background-color: #000000; */
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
 }
+
+.side1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.box2Pic{
+	background-image: url(//img/land-scape-caravan1.jpg);
+	width: 100%;
+	height: auto;
+}
+
+/* MAPBOX API */
+
+#map{
+	position: relative;
+	width: 43.75em;
+	height: 31.25em;
+}
+
+
+
+
+
+
 .box3{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/land-scape-caravan2.jpg);
+	background-color: #000000;
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
@@ -144,7 +238,7 @@ body{
 .box4{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/land-scape-caravan3.jpg);
+	background-color: #000000;
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
@@ -152,7 +246,7 @@ body{
 .box5{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/land-scape-caravan4.jpg);
+	background-color: #000000;
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
@@ -160,7 +254,7 @@ body{
 .box6{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/caravan-4.gif);
+	background-color: #000000;
 	background-size: cover;
 	display: table;
 	background-attachment: fixed;
