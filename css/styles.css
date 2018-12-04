@@ -11,10 +11,24 @@ body{
 	width: 100%;
 }
 
+#results{
+	overflow: scroll;
+}
+
 .flex-center{
 	display: flex;
 	align-content: center;
 	align-items: center;
+}
+
+
+/* MAPBOX API */
+
+#map{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* news api */
