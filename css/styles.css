@@ -194,9 +194,16 @@ body{
 .b3side2{
 	display: flex;
 	justify-content: center;
-	background-color:#1D6332;
+	background-color:black;
 	color:white;
 
+}
+
+.in-b3side2{
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #1D6332;
+	width: 92%;
 }
 
 .b3side3{
