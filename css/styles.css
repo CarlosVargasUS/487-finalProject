@@ -336,3 +336,35 @@ body{
 .list{
 	padding: 1%;
 }
+/* PHONE -------- */
+
+@media screen and (max-width: 800px) {
+	#box2{
+		flex-direction: column;
+	}
+
+	.pic2{
+		display: none;
+	}
+
+	.b3side1, .b3side3{
+		flex-direction: column;
+	}
+
+	#draggable , #droppable {
+		display:none;
+	}
+
+	#box4{
+		flex-direction: column;
+	}
+
+	.sources{
+		background-color: black;
+	}
+
+	#results{
+		overflow: hidden;
+	}
+
+  }
