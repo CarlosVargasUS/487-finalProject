@@ -161,7 +161,37 @@ body{
 }
 
 .in-side2 p{
-	font-size: 30px;
+	font-size: 28px;
+}
+
+.kid{
+	width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.family{
+	width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+#draggable{
+	float: right;
+    color: white;
+	padding-right: 13%;
+	text-align: center;
+	
+	
+}
+
+#droppable{
+	width: 550px;
+    height: 300px;
+    background-color: #1D6332;
+	float: left;
+	margin-left: 15%;
+
 }
 
 
@@ -191,24 +221,47 @@ body{
 	width: 100%;
 }
 
-.b3side2{
-	display: flex;
-	justify-content: center;
-	background-color:black;
-	color:white;
+.b3side1{
+	padding-bottom: 1%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 
+.b3side2{
+	width: 100%;
+	height: 1%;
+	background-color: #1D6332;
+
+	
 }
 
 .in-b3side2{
 	padding-left: 2%;
-	padding-right: 2%;
-	background-color: #1D6332;
-	width: 92%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    background-color: #1D6332;
+    width: 92%;
 }
 
 .b3side3{
 	display: flex;
-	justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+    height: 50%;
+	padding-left: 4%;
+}
+
+.text-b3side3{
+	width: 35%;
+    background-color: #1D6332;
+    padding: 2%;
+    color: white;
+    height: 50%;
+
 }
 
 #player{
@@ -237,18 +290,20 @@ body{
 	padding-right:2%;
 }
 
-
-
-
+/* BOX4--------------------------- */
 
 
 #box4{
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	height: 100vh;
 	width: 100%;
-	background-color: #000000;
-	background-size: cover;
-	display: table;
-	background-attachment: fixed;
+	background-color:black; 
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
 }
 #box5{
 	height: 100vh;

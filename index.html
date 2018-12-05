@@ -11,7 +11,9 @@
 
 	<!-- mapbox css -->
 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
-
+	<!-- JQUERY -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
 
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -30,10 +32,10 @@
 	</div>
 	<div id="box2">
 		<div id="side1">
-			<div id="map"></div>
 			<div id="box2Pic">
 				<img class="pic2" src="/img/land-scape-caravan1.jpg" alt="">
 			</div>
+			<div id="map"></div>
 		</div>
 		<div class="side2">
 			<div class="in-side2">
@@ -51,23 +53,32 @@
 	<div id="box3">
 		<div class="b3side1">
 			<div id="player"></div>
+			<div id="draggable">
+				<img class="kid" src="img/school-kid.jpg" alt="">
+			</div>
 		</div>
-		<div class="b3side2">
-			<div class="in-b3side2">
+		<div class="b3side3">
+			<div class="text-b3side3">
 				<p>Attachment Theory, argues that disruptions in ‘affectional bonds’ with parental figures (especially mothers) can
 					have profound negative psychological and developmental implications later in life. The loss of this bond with
 					parents triggers grief responses that affect behavior.</p>
 			</div>
+			<div id="droppable">
+					<p>Bring his family together! Drag his picture here!</p>
+					<img class="family" src="img/family_hispanic.jpg" alt="">
 
-		</div>
-		<div class="b3side3">
-			<img class="pic3" src="img/land-scape-caravan5-kid.jpg" alt="">
+
+			</div>
 		</div>
 	</div>
+
+
 
 	<!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 	 crossorigin="anonymous"></script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 	<!-- Mapbox CDN -->
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
 	<!-- D3 -->

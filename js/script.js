@@ -122,6 +122,16 @@ $(function () {
   var articles = [];
   var i = '';
 
+  $("#draggable" ).draggable();
+  $("#droppable" ).droppable({
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .html( "Thank you!" );
+    }
+  });
+
   for (i = 0; i < urlArray.length; i++) {
 
     $.ajax({
