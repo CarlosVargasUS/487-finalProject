@@ -414,3 +414,28 @@ body{
 	}
 
   }
+
+  /* ANIMATIONS */
+  .title {
+	animation-duration: 7s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-left:100%;
+	  width:300%
+	}
+	
+	to {
+	  margin-left:0%;
+	  width:100%;
+	}
+  }
+  .in-side2 {
+	animation-duration: 5s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+  }
