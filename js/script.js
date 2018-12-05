@@ -89,7 +89,7 @@ map.on('load', function () {
     });
 
     // setup the viewport
-    map.jumpTo({ 'center': coordinates[0], 'zoom': 4 });
+    map.jumpTo({ 'center': coordinates[0], 'zoom': 3 });
     map.setPitch(1);
 
     // on a regular basis, add more coordinates from the saved list and update the map
@@ -103,7 +103,7 @@ map.on('load', function () {
       } else {
         window.clearInterval(timer);
       }
-    }, 10);
+    }, 200);
   });
 });
 
