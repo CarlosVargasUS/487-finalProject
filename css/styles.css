@@ -60,10 +60,11 @@ body{
 
 .title {
 	padding-top: 20%;
-	font-size: 2.5rem;
+	/* font-size: 2.5rem; */
 	margin-bottom: 1.5em;
 	font-weight: 900;
 	margin-top: 1em;
+	text-align: center
 }
 
 .container {
@@ -75,6 +76,11 @@ body{
 
 
 /* buttons */
+
+.center-button{
+	display: flex;
+	justify-content: center;
+}
 
 .button {
 	display: inline-block;
@@ -327,19 +333,6 @@ body{
 	
 }
 
-#box5{
-	height: 100vh;
-	width: 100%;
-	background-color: #000000;
-	background-size: cover;
-	display: table;
-	background-attachment: fixed;
-}
-#box6{
-	height: 100vh;
-	width: 100%;
-	background-color: #000000;
-	background-size: cover;
-	display: table;
-	background-attachment: fixed;
+.list{
+	padding: 1%;
 }
