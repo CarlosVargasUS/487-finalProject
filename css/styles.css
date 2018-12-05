@@ -3,13 +3,6 @@ body{
 	padding: 0;
 }  
 
-/* #site{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	align-items: center;
-	width: 100%;
-} */
 
 #results{
 	width: 100%;
@@ -70,41 +63,12 @@ body{
 	margin-top: 1em;
 }
 
-/* hero-home
-=================== */
-
-/* .home-hero {
-	background-image: url(../img/caravan-3.gif);
-	background-size: cover;
-	background-position: center;
-	padding: 10em 0;
-	color: #FFF;
-}
-
-@media (min-width: 60rem) {
-	.home-hero {
-		height: 100vh;
-		padding-top: 35vh;
-	}
-} */
-
-.parallax--bg,
-.parallax--box {
-	transition: initial;
-}
-
 .container {
 	width: 95%;
 	max-width: 70em;
 	margin: 0 auto;
 }
 
-
-.unstyled-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
 
 @media (min-width:60rem) {
 
@@ -137,10 +101,6 @@ body{
 	}
 }
 
-.button-small {
-	font-size: .7rem;
-	font-weight: 700;
-}
 
 .button-accent {
 	color: #00ff6c;
@@ -153,28 +113,18 @@ body{
 	color: #232323;
 }
 
-.button-dark {
-	color: #232323;
-	border-color: #232323;
-}
-
-.button-dark:hover,
-.button-dark:focus {
-	background: #232323;
-	color: #00ff6c;
-}
 
 /* BOX2 ------------------*/
 
 #box2{
-	display: flex;
+	display: flex !important;
 	flex-direction: row;
 	height: 100vh;
 	width: 100%;
-	/* background-color: #000000; */
-	background-size: cover;
-	display: table;
-	background-attachment: fixed;
+	background-color:black; 
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
 }
 
 #side1{
@@ -184,11 +134,36 @@ body{
 	justify-content: space-evenly;
 }
 
-.box2Pic{
-	background-image: url(//img/land-scape-caravan1.jpg);
+.pic2{
 	width: 100%;
-	height: auto;
+    max-width: 600px;
+    height: auto;
 }
+
+.side2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-left: 2%;
+    padding-right: 2%;
+
+	
+}
+
+.in-side2{
+	background-color: #1D6332;
+	color: white;
+	height: 80%;
+	padding-right: 2%;
+	padding-left: 2%;
+	font-size: 2em
+}
+
+.in-side2 p{
+	font-size: 30px;
+}
+
 
 /* MAPBOX API */
 
@@ -197,20 +172,69 @@ body{
 	height: 31.25em;
 }
 
-.pic-two{
-	width: 43.75em;
-	height: 31.25em;
-}
-
+/* BOX3 --------------- */
 
 #box3{
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	height: 100vh;
 	width: 100%;
-	background-color: #000000;
-	background-size: cover;
-	display: table;
-	background-attachment: fixed;
+	background-color:black; 
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
 }
+
+.b3side1, .b3side2, .b3side3{
+	width: 100%;
+}
+
+.b3side2{
+	display: flex;
+	justify-content: center;
+	background-color:#1D6332;
+	color:white;
+
+}
+
+.b3side3{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#player{
+	display: flex;
+	align-self: flex-start;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-end{
+	display: flex;
+	align-self: flex-end;
+}
+
+.pic3{
+	width: 100%;
+    max-width: 600px;
+	height: auto;
+	padding-bottom: 2%;
+	padding-right:2%;
+}
+
+
+
+
+
+
 #box4{
 	height: 100vh;
 	width: 100%;
