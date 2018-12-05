@@ -128,7 +128,7 @@ $(function () {
       $( this )
         .addClass( "ui-state-highlight" )
         .find( "p" )
-          .html( "Thank you!" );
+          .html( "Thank you! You have reunited a family!" );
     }
   });
 
