@@ -3,14 +3,17 @@ body{
 	padding: 0;
 }  
 
+@media (min-width:60rem) {
 
-#results{
-	width: 100%;
-	height: 700px;
-	overflow: scroll;
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.title {
+		font-size: 3.7rem;
+	}
 }
-
-
 /* news api */
 
 .flex{
@@ -21,7 +24,7 @@ body{
   
   a{
 	text-decoration: none;
-	color:#000000;
+	color:white;
   }
   
   .latest-news{
@@ -70,18 +73,6 @@ body{
 }
 
 
-@media (min-width:60rem) {
-
-	p {
-		font-size: 1.2rem;
-		line-height: 1.6;
-	}
-
-	.title {
-		font-size: 3.7rem;
-	}
-}
-
 
 /* buttons */
 
@@ -94,13 +85,6 @@ body{
 	border-style: solid;
 	padding: .5em 1.75em;
 }
-
-@media (min-width: 60rem) {
-	.button {
-		font-size: 1.5rem;
-	}
-}
-
 
 .button-accent {
 	color: #00ff6c;
@@ -298,8 +282,8 @@ body{
 
 #box4{
 	display: flex !important;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
 	width: 100%;
@@ -308,6 +292,41 @@ body{
     display: table;
     background-attachment: fixed;
 }
+
+.b4side1{
+	width: 100%;
+    background-color:black;
+    height: 100%;
+}
+
+#results{
+	width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+#b4side1 h1{
+	text-align: center;
+}
+
+.b4side2{
+	display: flex;
+	flex-direction: column;
+	color:white;
+	width: 100%;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/* background-color: #1D6332; */
+
+}
+
+.text-b4side2{
+	/* height: 100%; */
+	background-color: #1D6332;
+	padding: 1%
+	
+}
+
 #box5{
 	height: 100vh;
 	width: 100%;
