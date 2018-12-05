@@ -347,7 +347,11 @@ body{
 		display: none;
 	}
 
-	.b3side1, .b3side3{
+	.b3side1{
+		flex-direction: column;
+
+	}
+	.b3side3{
 		flex-direction: column;
 	}
 
@@ -365,6 +369,29 @@ body{
 
 	#results{
 		overflow: hidden;
+	}
+
+	#map{
+		width: 374px;
+		height: auto;
+
+	}
+
+	#player{
+		width: 390px;
+		height: auto;
+	}
+
+	.b3side1{
+		padding-top: 20%;
+	}
+
+	.text-b3side3{
+		width: 35%;
+		background-color: #1D6332;
+		padding: 2%;
+		color: white;
+		height: 80%;
 	}
 
   }
